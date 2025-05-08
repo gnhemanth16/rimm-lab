@@ -28,7 +28,7 @@ export default function Footer() {
         <p>
           Designer:{" "}
           <a
-            href="https://www.linkedin.com/in/hemanth-gn/"
+            href="https://www.linkedin.com/in/hemanth-g-n-8aa804237/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -36,7 +36,7 @@ export default function Footer() {
           </a>{" "}
           | Maintained by:{" "}
           <a
-            href="https://www.linkedin.com/in/rajath-s/"
+            href="https://www.linkedin.com/in/rajath-s-600a27ab/"
             target="_blank"
             rel="noopener noreferrer"
           >
