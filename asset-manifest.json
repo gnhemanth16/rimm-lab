@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/rimm-lab/static/css/main.a8dc8641.css",
+    "main.js": "/rimm-lab/static/js/main.4a1afd67.js",
+    "static/media/facade.png": "/rimm-lab/static/media/facade.0e8f5eadf92aa9c5f1be.png",
+    "static/media/nd_shivakumar.jpg": "/rimm-lab/static/media/nd_shivakumar.ee962cd4e964c88bf88f.jpg",
+    "static/media/tribo_tester.jpg": "/rimm-lab/static/media/tribo_tester.6749caa0fb60021ddd16.jpg",
+    "static/media/krishnakant_bhole.jpg": "/rimm-lab/static/media/krishnakant_bhole.3f6411a78044f9c9066f.jpg",
+    "static/media/cnc.jpg": "/rimm-lab/static/media/cnc.9a9f0e592e63552a572a.jpg",
+    "static/media/sem.jpg": "/rimm-lab/static/media/sem.fc68e5ac21a9f0f2e032.jpg",
+    "static/media/xrd.jpg": "/rimm-lab/static/media/xrd.72192284651900daf429.jpg",
+    "static/media/sanketh_tonnanavar.jpg": "/rimm-lab/static/media/sanketh_tonnanavar.e9462dc054354febfea3.jpg",
+    "static/media/iisc_logo.png": "/rimm-lab/static/media/iisc_logo.ecc78da08ec69b1e5800.png",
+    "static/media/rajath_s.jpg": "/rimm-lab/static/media/rajath_s.ab995f2361588fb4c9fd.jpg",
+    "static/media/vishwash.jpg": "/rimm-lab/static/media/vishwash.c4077503b59636961e28.jpg",
+    "static/media/rimm_logo.png": "/rimm-lab/static/media/rimm_logo.28f2bcc5fbaab7b5315c.png",
+    "index.html": "/rimm-lab/index.html",
+    "main.a8dc8641.css.map": "/rimm-lab/static/css/main.a8dc8641.css.map",
+    "main.4a1afd67.js.map": "/rimm-lab/static/js/main.4a1afd67.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8dc8641.css",
+    "static/js/main.4a1afd67.js"
+  ]
+}
