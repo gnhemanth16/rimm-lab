@@ -32,7 +32,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Hemanth GN
+            Hemanth G N
           </a>{" "}
           | Maintained by:{" "}
           <a
