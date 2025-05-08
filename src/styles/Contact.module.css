@@ -1,0 +1,72 @@
+/* src/styles/Contact.module.css
+   ───────────────────────────────────────────────────────────────────────
+   Styles for Contact.jsx:
+   • Section heading
+   • Contact detail grid
+   • Responsive Google Map embed
+*/
+
+.contact {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--color-primary-light);
+}
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+  justify-content: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.detailItem {
+  flex: 1 1 200px;
+  background-color: var(--color-bg);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+
+.label {
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.text {
+  font-size: 1rem;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.text a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+/* Responsive 16:9 iframe container */
+.mapContainer {
+  position: relative;
+  width: 100%;
+  padding-bottom: 45%; /* 16:9 ratio */
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.mapContainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}

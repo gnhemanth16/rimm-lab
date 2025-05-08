@@ -1,0 +1,129 @@
+/* src/styles/Home.module.css
+   ───────────────────────────────────────────────────────────────────────
+   Styles for Home.jsx:
+   • Hero with facade background
+   • Overlay for title & tagline
+   • Stats counters
+   • Vision & Mission blocks with green background
+*/
+
+/* Import Aldrich font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
+
+/* ─── Home Wrapper ─────────────────────────────────────────────────────── */
+.home {
+  background-color: var(--color-bg);
+}
+
+/* ─── Hero Section ────────────────────────────────────────────────────── */
+.hero {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* facade.png as direct background */
+  background-image: url("../assets/images/logos/facade.png");
+  background-repeat: no-repeat;
+  background-position: center 20%; /* move image down 20% */
+  background-size: 40% auto; /* control size here */
+  transform: translateY(18%); /* move image up 20% */
+}
+
+/* Overlay so text sits on a subtle panel */
+.heroOverlay {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  text-align: center;
+  max-width: 1000px;
+  transform: translateY(-120%); /* move up 50% of its height */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+    flex-direction: column;
+
+}
+
+/* Title & Tagline */
+.title {
+  margin: 0;
+  font-size: 2.5rem;
+  color: var(--color-white);
+  font-family: "Aldrich", sans-serif; /* custom font */
+  color: #0080ff; /*  color */
+  align-items: center;
+  justify-content: center;
+}
+.tagline {
+  margin-top: var(--spacing-md);
+  font-size: 1.25rem;
+  color: var(--color-white);
+  max-width: 800px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ─── Stats Counters ──────────────────────────────────────────────────── */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-xl);
+  margin: var(--spacing-lg) 0;
+
+  transform: translateY(-50%); /* move up 50% of its height */
+}
+.statItem {
+  text-align: center;
+}
+.statNumber {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #019101;
+}
+.statLabel {
+  display: block;
+  margin-top: var(--spacing-xs);
+  font-size: 1rem;
+}
+
+/* ─── Vision & Mission ───────────────────────────────────────────────── */
+.visionMission {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+  justify-content: center;
+
+  /* entire block gets a green‐ish background */
+  background-color: #71db71;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+
+  z-index: 1; /* ensure it’s above the hero image */
+  position: relative;
+
+  transform: translateY(-20%); /* move up 50% of its height */
+}
+
+.vision,
+.mission {
+  flex: 1 1 300px;
+  background-color: var(--color-bg);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+.sectionHeading {
+  margin: 0 0 var(--spacing-sm);
+  color: var(--color-blue-dark);
+  font-size: 1.5rem;
+}
+
+.sectionText {
+  margin: 0;
+  color: var(--color-text);
+  line-height: 1.6;
+}

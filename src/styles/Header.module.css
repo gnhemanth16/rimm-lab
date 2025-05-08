@@ -1,0 +1,26 @@
+/* src/styles/Header.module.css */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--color-bg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-sm) 0;
+}
+
+.logoRow {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* ← center the logos */
+  gap: 210px; /* ← space between logos */
+  padding: auto;
+  margin-bottom: 20px; /* ← space below the logos */
+  margin-top: 20px; /* ← space above the logos */
+}
+
+.logo {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+}

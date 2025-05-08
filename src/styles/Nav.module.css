@@ -1,0 +1,55 @@
+/* src/styles/Nav.module.css
+   ─────────────────────────────────────────────────────────────────────
+   Styles for the navigation bar:
+   • Sticks to the top of the viewport when scrolling
+   • Horizontal list of links with hover and active states
+*/
+
+.nav {
+  position: fixed; /* pin it to the viewport */
+  top: calc(
+    var(--spacing-sm) + 110px + var(--spacing-sm)
+  ); /* header’s padding + logo height + padding */
+  left: 0;
+  width: 100%;
+  z-index: 900;
+  background-color: #40c040;
+  box-shadow: var(--shadow-sm);
+}
+
+.nav .container {
+  /* we keep the global container for horizontal padding & centering */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.navList {
+  display: flex;
+  justify-content: center; /* ← center all nav items */
+  gap: var(--spacing-lg);
+  margin: 0;
+  padding: var(--spacing-sm) 0;
+}
+
+.navItem {
+  list-style: none;
+}
+
+.navLink {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-grey-dark);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  cursor: pointer;
+  transition: color var(--transition-fast), border-bottom var(--transition-fast);
+}
+
+.navLink:hover {
+  color: var(--color-blue-dark);
+}
+
+.active {
+  border-bottom: 2px solid var(--color-blue);
+}

@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.jsx
 
-function App() {
+import React from "react";
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Home from "./pages/Home";
+import Footer from "./components/Footer";
+import ScrollButtons from "./components/ScrollButtons";
+import "./App.css";
+
+/**
+ * App
+ * ----
+ * Root component assembling the one-page layout:
+ *  - Header + Nav
+ *  - Home (contains all page sections internally)
+ *  - Footer
+ */
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {/* ─── Header & Navigation ─────────────────────────────────────────── */}
+      <Header />
+      <Nav />
+
+      {/* ─── Main Content ───────────────────────────────────────────────── */}
+      <main className="main-content">
+        <Home />
+      </main>
+
+      {/* ─── Footer ───────────────────────────────────────────────────────── */}
+      <Footer />
+      <ScrollButtons />
     </div>
   );
 }
-
-export default App;

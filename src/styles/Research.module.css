@@ -1,0 +1,54 @@
+/* src/styles/Research.module.css
+   ───────────────────────────────────────────────────────────────────────
+   Styles for Research.jsx:
+   • Section heading
+   • Responsive grid layout
+   • Card styling with hover lift effect
+*/
+
+.research {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--color-primary-light);
+}
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.card {
+  background-color: var(--color-bg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-md);
+  transition: transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.title {
+  font-size: 1rem;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+  text-align: justify;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--color-text);
+  line-height: 1.5;
+  text-align: justify;
+}

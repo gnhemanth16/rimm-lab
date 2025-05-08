@@ -1,0 +1,116 @@
+/* src/styles/Team.module.css
+   ───────────────────────────────────────────────────────────────────────
+   Styles for Team.jsx:
+   • PI profile section
+   • Doctoral students grid
+*/
+
+.team {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--color-primary-light);
+}
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* ─── PI Section ──────────────────────────────────────────────────────── */
+.piSection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.piImage {
+  flex: 0 0 250px;
+  width: 300px;
+  height: 300px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  box-shadow: var(--shadow-sm);
+}
+
+.piDetails {
+  flex: 1;
+}
+
+.piName {
+  font-size: 1.75rem;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-xs);
+}
+
+.piDesignation {
+  font-size: 1rem;
+  color: var(--color-muted);
+  margin-bottom: var(--spacing-sm);
+}
+
+.piInterests {
+  font-size: 1rem;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-md);
+}
+
+.piContactList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.piContactItem {
+  font-size: 0.9rem;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-xs);
+}
+
+.piContactItem a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+/* ─── Student Grid ───────────────────────────────────────────────────── */
+.studentGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.studentCard {
+  background-color: var(--color-bg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-md);
+  text-align: center;
+}
+
+.studentPhoto {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-sm);
+}
+
+.studentName {
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  margin: var(--spacing-xs) 0;
+}
+
+.studentThesis {
+  font-size: 1rem;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-xs);
+  text-align: justify;
+}
+
+.studentDuration {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}

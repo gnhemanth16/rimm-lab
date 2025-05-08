@@ -1,0 +1,63 @@
+/* src/styles/Footer.module.css
+   ─────────────────────────────────────────────────────────────────────
+   Styles for the footer component:
+   • Contact info & site credits sections
+*/
+
+.footer {
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: var(--spacing-lg) 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  gap: var(--spacing-md);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.contact p {
+  margin: var(--spacing-xs) 0;
+  font-size: 0.9rem;
+}
+
+.contact a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.credits {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: var(--spacing-md);
+}
+
+.credits a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
+}
+
+.credits a:hover {
+  opacity: 0.8;
+}
+
+.iiscFooterLogo {
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the image */
+  transform: scale(2.0); /* Optional: Adjust scaling if needed */
+  margin-bottom: 20px;
+  margin-top:20px;
+}
